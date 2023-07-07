@@ -17,3 +17,7 @@ variable "ami_id" {
   description = "AMI to use for the instance."
   type        = string
 }
+variable "allowed_ip" {
+  description = "Allowed IP address"
+  type        = string
+}

@@ -1,13 +1,13 @@
-data "aws_vpc" "test_vpc" {
+data "aws_vpc" "default_vpc" {
   filter {
     name   = "tag:Name"
-    values = ["test-vpc"]
+    values = ["default_vpc"]
   }
 }
 
-data "aws_route_table" "default" {
+data "aws_route_table" "route_table" {
     filter {
         name = "tag:Name"
-        values = ["Default"]
+        values = ["route_table"]
     }
 }
